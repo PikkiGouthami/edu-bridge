@@ -1,0 +1,21 @@
+package programfirst;
+
+abstract class Atmd {
+	abstract void withdraw();
+	 abstract void deposite();
+	}
+	public class Atm extends Atmd {
+	  void withdraw()
+	  {
+		  System.out.println("withdraw");
+	  }
+	  void deposite()
+	  {
+		  System.out.println("deposite");
+	  }
+		public static void main(String[] args) {
+			Atm ff = new Atm();
+			ff.withdraw();
+			ff.deposite();
+		}
+	}
